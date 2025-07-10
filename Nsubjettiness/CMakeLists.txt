@@ -62,7 +62,7 @@ install(TARGETS Nsubjettiness
 )
 
 # Install additional files
-install(FILES AUTHORS COPYING NEWS README VERSION.txt.txt
+install(FILES AUTHORS COPYING NEWS README VERSION.txt
     DESTINATION share/doc/Nsubjettiness
 )
 
