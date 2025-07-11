@@ -22,7 +22,6 @@ set_target_properties(SDFPlugin PROPERTIES
 )
 
 message(STATUS "Building SDFPlugin version ${CONTRIB_VERSION}")
-message(STATUS "MAKE_PROJECT_SOURCE_DIR: ${CMAKE_PROJECT_SOURCE_DIR}")
 # Include directories
 target_include_directories(SDFPlugin PUBLIC 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

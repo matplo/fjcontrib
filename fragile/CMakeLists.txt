@@ -1,4 +1,4 @@
-# CMakeLists.txt for Nsubjettiness contrib
+# CMakeLists.txt for fragile lib of fj contrib
 
 # Read VERSION file
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/VERSION.txt")
@@ -8,25 +8,62 @@ else()
     set(CONTRIB_VERSION "2.3.2")
 endif()
 
-# Define source files
-# find all *.cc files in the upper directory but not in the current directory
-file(GLOB_RECURSE FASTJET_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/../*.cc")
-# filter out the current directory's files
-list(FILTER FASTJET_SOURCES EXCLUDE REGEX "${CMAKE_CURRENT_SOURCE_DIR}/.*.cc")
-list(FILTER FASTJET_SOURCES EXCLUDE REGEX "${CMAKE_CURRENT_SOURCE_DIR}/../example*.cc")
-# find all *.hh files in the upper directory but not in the current directory
-file(GLOB_RECURSE FASTJET_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/../*.hh")
-# filter out the current directory's files
-list(FILTER FASTJET_HEADERS EXCLUDE REGEX "${CMAKE_CURRENT_SOURCE_DIR}/.*.hh")
+# Read contribs.txt to get list of directories to include
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt")
+    file(READ "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt" CONTRIB_DIRS_RAW)
+    string(STRIP "${CONTRIB_DIRS_RAW}" CONTRIB_DIRS_RAW)
+    string(REPLACE "\n" ";" CONTRIB_DIRS_LIST "${CONTRIB_DIRS_RAW}")
+    
+    # Debug: Print directories from contribs.txt
+    message(STATUS "Directories from contribs.txt: ${CONTRIB_DIRS_LIST}")
+    
+    # Collect source and header files from specified directories
+    set(CONTRIB_SOURCES "")
+    set(CONTRIB_HEADERS "")
+    
+    foreach(contrib_dir ${CONTRIB_DIRS_LIST})
+        string(STRIP "${contrib_dir}" contrib_dir)
+        if(NOT "${contrib_dir}" STREQUAL "")
+            set(full_contrib_path "${CMAKE_CURRENT_SOURCE_DIR}/../${contrib_dir}")
+            
+            # Find .cc files in this directory
+            file(GLOB dir_sources "${full_contrib_path}/*.cc")
+            list(FILTER dir_sources EXCLUDE REGEX ".*example.*\.cc$")
+            list(APPEND CONTRIB_SOURCES ${dir_sources})
+            
+            # Find .hh files in this directory
+            file(GLOB dir_headers "${full_contrib_path}/*.hh")
+            list(APPEND CONTRIB_HEADERS ${dir_headers})
+            
+            message(STATUS "From ${contrib_dir}: found ${dir_sources}")
+        endif()
+    endforeach()
+else()
+    message(FATAL_ERROR "contribs.txt file not found!")
+endif()
+
+# Debug: Print found sources after filtering
+message(STATUS "Found CONTRIB_SOURCES after filtering: ${CONTRIB_SOURCES}")
+message(STATUS "Found CONTRIB_HEADERS: ${CONTRIB_HEADERS}")
+
+# Check if we have any sources
+list(LENGTH CONTRIB_SOURCES SOURCES_COUNT)
+if(SOURCES_COUNT EQUAL 0)
+    message(FATAL_ERROR "No source files found! Check your directory structure.")
+endif()
 
 # Create the library
 add_library(fastjetcontribfragile SHARED ${CONTRIB_SOURCES})
+
+# Debug: Print found sources
+message(STATUS "Found CONTRIB_SOURCES: ${CONTRIB_SOURCES}")
+message(STATUS "Found CONTRIB_HEADERS: ${CONTRIB_HEADERS}")
 
 # Set library properties
 set_target_properties(fastjetcontribfragile PROPERTIES
     VERSION ${CONTRIB_VERSION}
     SOVERSION ${CONTRIB_VERSION}
-    PUBLIC_HEADER "${CONTRIB_HEADERS}"
+    # PUBLIC_HEADER "${CONTRIB_HEADERS}"
 )
 
 # Link with FastJet
@@ -51,7 +88,7 @@ install(TARGETS fastjetcontribfragile
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib
     RUNTIME DESTINATION bin
-    PUBLIC_HEADER DESTINATION include/fastjet/contrib
+#     PUBLIC_HEADER DESTINATION include/fastjet/contrib
 )
 
 # Install additional files

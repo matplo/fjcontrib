@@ -1,6 +1,23 @@
 #!/bin/bash
 # Build script for fjcontrib using CMake
 
+savedir=${PWD}
+
+function thisdir()
+{
+	SOURCE="${BASH_SOURCE[0]}"
+	while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+	  DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+	  SOURCE="$(readlink "$SOURCE")"
+	  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+	done
+	DIR="$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )"
+	echo ${DIR}
+}
+THISD=$(thisdir)
+
+cd ${THISD}/..
+
 set -e
 
 # Default values
@@ -83,7 +100,7 @@ echo ""
 # Create build directory
 if [[ -d "$BUILD_DIR" ]]; then
 		echo "Build directory '$BUILD_DIR' already exists. Removing it..."
-		# rm -rf "$BUILD_DIR"
+		rm -rf "$BUILD_DIR"
 fi
 echo "Creating build directory: $BUILD_DIR"
 mkdir -p "$BUILD_DIR"
@@ -117,3 +134,5 @@ echo "  cd $BUILD_DIR && make install"
 echo ""
 echo "To run examples (if built), they are in:"
 echo "  $BUILD_DIR/*/example_name"
+
+cd "$savedir"
