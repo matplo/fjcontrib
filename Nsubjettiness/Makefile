@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_SOURCE_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_BINARY_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/Nsubjettiness//CMakeFiles/progress.marks
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/Nsubjettiness//CMakeFiles/progress.marks
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/clean
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Nsubjettiness/CMakeFiles/Nsubjettiness.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/Nsubjettiness.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/Nsubjettiness.dir/rule
 .PHONY : Nsubjettiness/CMakeFiles/Nsubjettiness.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ Nsubjettiness: Nsubjettiness/CMakeFiles/Nsubjettiness.dir/rule
 
 # fast build rule for target.
 Nsubjettiness/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build
 .PHONY : Nsubjettiness/fast
 
 # Convenience name for target.
 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/rule
 .PHONY : Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ nsubjettiness_example_advanced_usage: Nsubjettiness/CMakeFiles/nsubjettiness_exa
 
 # fast build rule for target.
 nsubjettiness_example_advanced_usage/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build
 .PHONY : nsubjettiness_example_advanced_usage/fast
 
 # Convenience name for target.
 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/rule
 .PHONY : Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ nsubjettiness_example_advanced_usage_ee: Nsubjettiness/CMakeFiles/nsubjettiness_
 
 # fast build rule for target.
 nsubjettiness_example_advanced_usage_ee/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build
 .PHONY : nsubjettiness_example_advanced_usage_ee/fast
 
 # Convenience name for target.
 Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/rule
 .PHONY : Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/rule
 
 # Convenience name for target.
@@ -214,12 +214,12 @@ nsubjettiness_example_basic_usage: Nsubjettiness/CMakeFiles/nsubjettiness_exampl
 
 # fast build rule for target.
 nsubjettiness_example_basic_usage/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build
 .PHONY : nsubjettiness_example_basic_usage/fast
 
 # Convenience name for target.
 Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/rule
 .PHONY : Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/rule
 
 # Convenience name for target.
@@ -228,7 +228,7 @@ nsubjettiness_example_v1p0p3: Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p
 
 # fast build rule for target.
 nsubjettiness_example_v1p0p3/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build
 .PHONY : nsubjettiness_example_v1p0p3/fast
 
 AxesDefinition.o: AxesDefinition.cc.o
@@ -236,7 +236,7 @@ AxesDefinition.o: AxesDefinition.cc.o
 
 # target to build an object file
 AxesDefinition.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.o
 .PHONY : AxesDefinition.cc.o
 
 AxesDefinition.i: AxesDefinition.cc.i
@@ -244,7 +244,7 @@ AxesDefinition.i: AxesDefinition.cc.i
 
 # target to preprocess a source file
 AxesDefinition.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.i
 .PHONY : AxesDefinition.cc.i
 
 AxesDefinition.s: AxesDefinition.cc.s
@@ -252,7 +252,7 @@ AxesDefinition.s: AxesDefinition.cc.s
 
 # target to generate assembly for a file
 AxesDefinition.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/AxesDefinition.cc.s
 .PHONY : AxesDefinition.cc.s
 
 ExtraRecombiners.o: ExtraRecombiners.cc.o
@@ -260,7 +260,7 @@ ExtraRecombiners.o: ExtraRecombiners.cc.o
 
 # target to build an object file
 ExtraRecombiners.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.o
 .PHONY : ExtraRecombiners.cc.o
 
 ExtraRecombiners.i: ExtraRecombiners.cc.i
@@ -268,7 +268,7 @@ ExtraRecombiners.i: ExtraRecombiners.cc.i
 
 # target to preprocess a source file
 ExtraRecombiners.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.i
 .PHONY : ExtraRecombiners.cc.i
 
 ExtraRecombiners.s: ExtraRecombiners.cc.s
@@ -276,7 +276,7 @@ ExtraRecombiners.s: ExtraRecombiners.cc.s
 
 # target to generate assembly for a file
 ExtraRecombiners.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/ExtraRecombiners.cc.s
 .PHONY : ExtraRecombiners.cc.s
 
 MeasureDefinition.o: MeasureDefinition.cc.o
@@ -284,7 +284,7 @@ MeasureDefinition.o: MeasureDefinition.cc.o
 
 # target to build an object file
 MeasureDefinition.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.o
 .PHONY : MeasureDefinition.cc.o
 
 MeasureDefinition.i: MeasureDefinition.cc.i
@@ -292,7 +292,7 @@ MeasureDefinition.i: MeasureDefinition.cc.i
 
 # target to preprocess a source file
 MeasureDefinition.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.i
 .PHONY : MeasureDefinition.cc.i
 
 MeasureDefinition.s: MeasureDefinition.cc.s
@@ -300,7 +300,7 @@ MeasureDefinition.s: MeasureDefinition.cc.s
 
 # target to generate assembly for a file
 MeasureDefinition.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/MeasureDefinition.cc.s
 .PHONY : MeasureDefinition.cc.s
 
 Njettiness.o: Njettiness.cc.o
@@ -308,7 +308,7 @@ Njettiness.o: Njettiness.cc.o
 
 # target to build an object file
 Njettiness.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.o
 .PHONY : Njettiness.cc.o
 
 Njettiness.i: Njettiness.cc.i
@@ -316,7 +316,7 @@ Njettiness.i: Njettiness.cc.i
 
 # target to preprocess a source file
 Njettiness.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.i
 .PHONY : Njettiness.cc.i
 
 Njettiness.s: Njettiness.cc.s
@@ -324,7 +324,7 @@ Njettiness.s: Njettiness.cc.s
 
 # target to generate assembly for a file
 Njettiness.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Njettiness.cc.s
 .PHONY : Njettiness.cc.s
 
 NjettinessPlugin.o: NjettinessPlugin.cc.o
@@ -332,7 +332,7 @@ NjettinessPlugin.o: NjettinessPlugin.cc.o
 
 # target to build an object file
 NjettinessPlugin.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.o
 .PHONY : NjettinessPlugin.cc.o
 
 NjettinessPlugin.i: NjettinessPlugin.cc.i
@@ -340,7 +340,7 @@ NjettinessPlugin.i: NjettinessPlugin.cc.i
 
 # target to preprocess a source file
 NjettinessPlugin.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.i
 .PHONY : NjettinessPlugin.cc.i
 
 NjettinessPlugin.s: NjettinessPlugin.cc.s
@@ -348,7 +348,7 @@ NjettinessPlugin.s: NjettinessPlugin.cc.s
 
 # target to generate assembly for a file
 NjettinessPlugin.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/NjettinessPlugin.cc.s
 .PHONY : NjettinessPlugin.cc.s
 
 Nsubjettiness.o: Nsubjettiness.cc.o
@@ -356,7 +356,7 @@ Nsubjettiness.o: Nsubjettiness.cc.o
 
 # target to build an object file
 Nsubjettiness.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.o
 .PHONY : Nsubjettiness.cc.o
 
 Nsubjettiness.i: Nsubjettiness.cc.i
@@ -364,7 +364,7 @@ Nsubjettiness.i: Nsubjettiness.cc.i
 
 # target to preprocess a source file
 Nsubjettiness.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.i
 .PHONY : Nsubjettiness.cc.i
 
 Nsubjettiness.s: Nsubjettiness.cc.s
@@ -372,7 +372,7 @@ Nsubjettiness.s: Nsubjettiness.cc.s
 
 # target to generate assembly for a file
 Nsubjettiness.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/Nsubjettiness.cc.s
 .PHONY : Nsubjettiness.cc.s
 
 TauComponents.o: TauComponents.cc.o
@@ -380,7 +380,7 @@ TauComponents.o: TauComponents.cc.o
 
 # target to build an object file
 TauComponents.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.o
 .PHONY : TauComponents.cc.o
 
 TauComponents.i: TauComponents.cc.i
@@ -388,7 +388,7 @@ TauComponents.i: TauComponents.cc.i
 
 # target to preprocess a source file
 TauComponents.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.i
 .PHONY : TauComponents.cc.i
 
 TauComponents.s: TauComponents.cc.s
@@ -396,7 +396,7 @@ TauComponents.s: TauComponents.cc.s
 
 # target to generate assembly for a file
 TauComponents.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/TauComponents.cc.s
 .PHONY : TauComponents.cc.s
 
 XConePlugin.o: XConePlugin.cc.o
@@ -404,7 +404,7 @@ XConePlugin.o: XConePlugin.cc.o
 
 # target to build an object file
 XConePlugin.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.o
 .PHONY : XConePlugin.cc.o
 
 XConePlugin.i: XConePlugin.cc.i
@@ -412,7 +412,7 @@ XConePlugin.i: XConePlugin.cc.i
 
 # target to preprocess a source file
 XConePlugin.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.i
 .PHONY : XConePlugin.cc.i
 
 XConePlugin.s: XConePlugin.cc.s
@@ -420,7 +420,7 @@ XConePlugin.s: XConePlugin.cc.s
 
 # target to generate assembly for a file
 XConePlugin.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/Nsubjettiness.dir/build.make Nsubjettiness/CMakeFiles/Nsubjettiness.dir/XConePlugin.cc.s
 .PHONY : XConePlugin.cc.s
 
 example_advanced_usage.o: example_advanced_usage.cc.o
@@ -428,7 +428,7 @@ example_advanced_usage.o: example_advanced_usage.cc.o
 
 # target to build an object file
 example_advanced_usage.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.o
 .PHONY : example_advanced_usage.cc.o
 
 example_advanced_usage.i: example_advanced_usage.cc.i
@@ -436,7 +436,7 @@ example_advanced_usage.i: example_advanced_usage.cc.i
 
 # target to preprocess a source file
 example_advanced_usage.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.i
 .PHONY : example_advanced_usage.cc.i
 
 example_advanced_usage.s: example_advanced_usage.cc.s
@@ -444,7 +444,7 @@ example_advanced_usage.s: example_advanced_usage.cc.s
 
 # target to generate assembly for a file
 example_advanced_usage.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage.dir/example_advanced_usage.cc.s
 .PHONY : example_advanced_usage.cc.s
 
 example_advanced_usage_ee.o: example_advanced_usage_ee.cc.o
@@ -452,7 +452,7 @@ example_advanced_usage_ee.o: example_advanced_usage_ee.cc.o
 
 # target to build an object file
 example_advanced_usage_ee.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.o
 .PHONY : example_advanced_usage_ee.cc.o
 
 example_advanced_usage_ee.i: example_advanced_usage_ee.cc.i
@@ -460,7 +460,7 @@ example_advanced_usage_ee.i: example_advanced_usage_ee.cc.i
 
 # target to preprocess a source file
 example_advanced_usage_ee.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.i
 .PHONY : example_advanced_usage_ee.cc.i
 
 example_advanced_usage_ee.s: example_advanced_usage_ee.cc.s
@@ -468,7 +468,7 @@ example_advanced_usage_ee.s: example_advanced_usage_ee.cc.s
 
 # target to generate assembly for a file
 example_advanced_usage_ee.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_advanced_usage_ee.dir/example_advanced_usage_ee.cc.s
 .PHONY : example_advanced_usage_ee.cc.s
 
 example_basic_usage.o: example_basic_usage.cc.o
@@ -476,7 +476,7 @@ example_basic_usage.o: example_basic_usage.cc.o
 
 # target to build an object file
 example_basic_usage.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.o
 .PHONY : example_basic_usage.cc.o
 
 example_basic_usage.i: example_basic_usage.cc.i
@@ -484,7 +484,7 @@ example_basic_usage.i: example_basic_usage.cc.i
 
 # target to preprocess a source file
 example_basic_usage.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.i
 .PHONY : example_basic_usage.cc.i
 
 example_basic_usage.s: example_basic_usage.cc.s
@@ -492,7 +492,7 @@ example_basic_usage.s: example_basic_usage.cc.s
 
 # target to generate assembly for a file
 example_basic_usage.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_basic_usage.dir/example_basic_usage.cc.s
 .PHONY : example_basic_usage.cc.s
 
 example_v1p0p3.o: example_v1p0p3.cc.o
@@ -500,7 +500,7 @@ example_v1p0p3.o: example_v1p0p3.cc.o
 
 # target to build an object file
 example_v1p0p3.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.o
 .PHONY : example_v1p0p3.cc.o
 
 example_v1p0p3.i: example_v1p0p3.cc.i
@@ -508,7 +508,7 @@ example_v1p0p3.i: example_v1p0p3.cc.i
 
 # target to preprocess a source file
 example_v1p0p3.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.i
 .PHONY : example_v1p0p3.cc.i
 
 example_v1p0p3.s: example_v1p0p3.cc.s
@@ -516,7 +516,7 @@ example_v1p0p3.s: example_v1p0p3.cc.s
 
 # target to generate assembly for a file
 example_v1p0p3.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/build.make Nsubjettiness/CMakeFiles/nsubjettiness_example_v1p0p3.dir/example_v1p0p3.cc.s
 .PHONY : example_v1p0p3.cc.s
 
 # Help Target
@@ -583,6 +583,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

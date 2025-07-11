@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_SOURCE_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_BINARY_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/SignalFreeBackgroundEstimator//CMakeFiles/progress.marks
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/SignalFreeBackgroundEstimator//CMakeFiles/progress.marks
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/clean
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/rule
 .PHONY : SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ SignalFreeBackgroundEstimator: SignalFreeBackgroundEstimator/CMakeFiles/SignalFr
 
 # fast build rule for target.
 SignalFreeBackgroundEstimator/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build
 .PHONY : SignalFreeBackgroundEstimator/fast
 
 # Convenience name for target.
 SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/rule
 .PHONY : SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ signalfreebackgroundestimator_example: SignalFreeBackgroundEstimator/CMakeFiles/
 
 # fast build rule for target.
 signalfreebackgroundestimator_example/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build
 .PHONY : signalfreebackgroundestimator_example/fast
 
 SignalFreeBackgroundEstimator.o: SignalFreeBackgroundEstimator.cc.o
@@ -194,7 +194,7 @@ SignalFreeBackgroundEstimator.o: SignalFreeBackgroundEstimator.cc.o
 
 # target to build an object file
 SignalFreeBackgroundEstimator.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.o
 .PHONY : SignalFreeBackgroundEstimator.cc.o
 
 SignalFreeBackgroundEstimator.i: SignalFreeBackgroundEstimator.cc.i
@@ -202,7 +202,7 @@ SignalFreeBackgroundEstimator.i: SignalFreeBackgroundEstimator.cc.i
 
 # target to preprocess a source file
 SignalFreeBackgroundEstimator.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.i
 .PHONY : SignalFreeBackgroundEstimator.cc.i
 
 SignalFreeBackgroundEstimator.s: SignalFreeBackgroundEstimator.cc.s
@@ -210,7 +210,7 @@ SignalFreeBackgroundEstimator.s: SignalFreeBackgroundEstimator.cc.s
 
 # target to generate assembly for a file
 SignalFreeBackgroundEstimator.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/SignalFreeBackgroundEstimator.dir/SignalFreeBackgroundEstimator.cc.s
 .PHONY : SignalFreeBackgroundEstimator.cc.s
 
 example.o: example.cc.o
@@ -218,7 +218,7 @@ example.o: example.cc.o
 
 # target to build an object file
 example.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.o
 .PHONY : example.cc.o
 
 example.i: example.cc.i
@@ -226,7 +226,7 @@ example.i: example.cc.i
 
 # target to preprocess a source file
 example.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.i
 .PHONY : example.cc.i
 
 example.s: example.cc.s
@@ -234,7 +234,7 @@ example.s: example.cc.s
 
 # target to generate assembly for a file
 example.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/build.make SignalFreeBackgroundEstimator/CMakeFiles/signalfreebackgroundestimator_example.dir/example.cc.s
 .PHONY : example.cc.s
 
 # Help Target
@@ -268,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

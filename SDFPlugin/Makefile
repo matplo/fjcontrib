@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_SOURCE_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master
+CMAKE_BINARY_DIR = /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/SDFPlugin//CMakeFiles/progress.marks
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/SDFPlugin//CMakeFiles/progress.marks
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/clean
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/preinstall
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 SDFPlugin/CMakeFiles/SDFPlugin.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/CMakeFiles/SDFPlugin.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/CMakeFiles/SDFPlugin.dir/rule
 .PHONY : SDFPlugin/CMakeFiles/SDFPlugin.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ SDFPlugin: SDFPlugin/CMakeFiles/SDFPlugin.dir/rule
 
 # fast build rule for target.
 SDFPlugin/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/build
 .PHONY : SDFPlugin/fast
 
 # Convenience name for target.
 SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/rule:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/rule
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/rule
 .PHONY : SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ sdfplugin_example-SDF: SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/rule
 
 # fast build rule for target.
 sdfplugin_example-SDF/fast:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build
 .PHONY : sdfplugin_example-SDF/fast
 
 SDFPlugin.o: SDFPlugin.cc.o
@@ -194,7 +194,7 @@ SDFPlugin.o: SDFPlugin.cc.o
 
 # target to build an object file
 SDFPlugin.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.o
 .PHONY : SDFPlugin.cc.o
 
 SDFPlugin.i: SDFPlugin.cc.i
@@ -202,7 +202,7 @@ SDFPlugin.i: SDFPlugin.cc.i
 
 # target to preprocess a source file
 SDFPlugin.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.i
 .PHONY : SDFPlugin.cc.i
 
 SDFPlugin.s: SDFPlugin.cc.s
@@ -210,7 +210,7 @@ SDFPlugin.s: SDFPlugin.cc.s
 
 # target to generate assembly for a file
 SDFPlugin.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/SDFPlugin.dir/build.make SDFPlugin/CMakeFiles/SDFPlugin.dir/SDFPlugin.cc.s
 .PHONY : SDFPlugin.cc.s
 
 example-SDF.o: example-SDF.cc.o
@@ -218,7 +218,7 @@ example-SDF.o: example-SDF.cc.o
 
 # target to build an object file
 example-SDF.cc.o:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.o
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.o
 .PHONY : example-SDF.cc.o
 
 example-SDF.i: example-SDF.cc.i
@@ -226,7 +226,7 @@ example-SDF.i: example-SDF.cc.i
 
 # target to preprocess a source file
 example-SDF.cc.i:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.i
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.i
 .PHONY : example-SDF.cc.i
 
 example-SDF.s: example-SDF.cc.s
@@ -234,7 +234,7 @@ example-SDF.s: example-SDF.cc.s
 
 # target to generate assembly for a file
 example-SDF.cc.s:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.s
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(MAKE) $(MAKESILENT) -f SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/build.make SDFPlugin/CMakeFiles/sdfplugin_example-SDF.dir/example-SDF.cc.s
 .PHONY : example-SDF.cc.s
 
 # Help Target
@@ -268,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ploskon/tmp/test_newfjcontrib/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ploskon/devel/yasp/.workdir/fjcontrib/mp/fjcontrib-master && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
