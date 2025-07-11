@@ -55,6 +55,15 @@ while [[ $# -gt 0 ]]; do
             PARALLEL_JOBS="$2"
             shift 2
             ;;
+        --clean)
+            echo "Cleaning build directory..."
+            if [[ -d "$BUILD_DIR" ]]; then
+                rm -rf "$BUILD_DIR"
+            else
+                echo "Build directory '$BUILD_DIR' does not exist."
+            fi
+            exit 0
+            ;;
         --help|-h)
             echo "Usage: $0 [options]"
             echo "Options:"
@@ -65,6 +74,7 @@ while [[ $# -gt 0 ]]; do
             echo "  --enable-testing      Enable testing"
             echo "  --jobs, -j N          Number of parallel jobs [default: auto-detect]"
             echo "  --help, -h            Show this help"
+            echo "  --clean               Clean the build directory"
             exit 0
             ;;
         *)
@@ -98,10 +108,10 @@ echo "Found FastJet version: $FASTJET_VERSION"
 echo ""
 
 # Create build directory
-if [[ -d "$BUILD_DIR" ]]; then
-		echo "Build directory '$BUILD_DIR' already exists. Removing it..."
-		rm -rf "$BUILD_DIR"
-fi
+# if [[ -d "$BUILD_DIR" ]]; then
+# 		echo "Build directory '$BUILD_DIR' already exists. Removing it..."
+# 		rm -rf "$BUILD_DIR"
+# fi
 echo "Creating build directory: $BUILD_DIR"
 mkdir -p "$BUILD_DIR"
 cd "$BUILD_DIR"

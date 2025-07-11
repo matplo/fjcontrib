@@ -7,7 +7,6 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/VERSION.txt")
 else()
     set(CONTRIB_VERSION "2.3.2")
 endif()
-
 # Read contribs.txt to get list of directories to include
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt")
     file(READ "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt" CONTRIB_DIRS_RAW)
@@ -20,6 +19,7 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt")
     # Collect source and header files from specified directories
     set(CONTRIB_SOURCES "")
     set(CONTRIB_HEADERS "")
+    set(CONTRIB_INCLUDE_DIRS "")  # Add this line to collect include directories
     
     foreach(contrib_dir ${CONTRIB_DIRS_LIST})
         string(STRIP "${contrib_dir}" contrib_dir)
@@ -34,6 +34,9 @@ if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/contribs.txt")
             # Find .hh files in this directory
             file(GLOB dir_headers "${full_contrib_path}/*.hh")
             list(APPEND CONTRIB_HEADERS ${dir_headers})
+            
+            # Add directory to include paths
+            list(APPEND CONTRIB_INCLUDE_DIRS ${full_contrib_path})
             
             message(STATUS "From ${contrib_dir}: found ${dir_sources}")
         endif()
@@ -59,11 +62,12 @@ add_library(fastjetcontribfragile SHARED ${CONTRIB_SOURCES})
 set_target_properties(fastjetcontribfragile PROPERTIES
     VERSION ${CONTRIB_VERSION}
     SOVERSION ${CONTRIB_VERSION}
-    # PUBLIC_HEADER "${CONTRIB_HEADERS}"
+    PUBLIC_HEADER "${CONTRIB_HEADERS}"
 )
 
 # Link with FastJet
 target_link_libraries(fastjetcontribfragile ${FASTJET_LIBRARIES})
+
 target_include_directories(fastjetcontribfragile PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
@@ -73,6 +77,14 @@ target_include_directories(fastjetcontribfragile SYSTEM BEFORE PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../>
     $<INSTALL_INTERFACE:include/fastjet/contrib>
 )
+
+# Add include directories for each contrib directory
+foreach(include_dir ${CONTRIB_INCLUDE_DIRS})
+    target_include_directories(fastjetcontribfragile PUBLIC
+        $<BUILD_INTERFACE:${include_dir}>
+        $<BUILD_INTERFACE:${include_dir}/include>
+    )
+endforeach()
 
 # Important: Ensure current source directory is NOT in system include paths
 # to avoid conflicts with standard C++ headers like <version>
