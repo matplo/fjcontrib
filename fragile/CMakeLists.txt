@@ -43,7 +43,7 @@ else()
 endif()
 
 # Debug: Print found sources after filtering
-message(STATUS "Found CONTRIB_SOURCES after filtering: ${CONTRIB_SOURCES}")
+message(STATUS "Found CONTRIB_SOURCES: ${CONTRIB_SOURCES}")
 message(STATUS "Found CONTRIB_HEADERS: ${CONTRIB_HEADERS}")
 
 # Check if we have any sources
@@ -54,10 +54,6 @@ endif()
 
 # Create the library
 add_library(fastjetcontribfragile SHARED ${CONTRIB_SOURCES})
-
-# Debug: Print found sources
-message(STATUS "Found CONTRIB_SOURCES: ${CONTRIB_SOURCES}")
-message(STATUS "Found CONTRIB_HEADERS: ${CONTRIB_HEADERS}")
 
 # Set library properties
 set_target_properties(fastjetcontribfragile PROPERTIES
